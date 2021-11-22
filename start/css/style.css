@@ -48,22 +48,21 @@ a{
 
 
 
-
-.header .menu{
+.menu{
       margin-left: auto;
 }
 
 
-.header .menu__list{
+.menu__list{
       display: flex;
          
 }
 
-.header .menu__item + .menu__item{
+.menu__item + .menu__item{
       margin-left: 70px;
 }
 
-.header .menu__list-link{
+.menu__list-link{
       font-weight: 400;
       color: #FFFFFF;
       line-height: 24px;
@@ -71,6 +70,7 @@ a{
 }
 
 .language__nav{
+      display: flex;
       margin-left: 100px;
       margin-right: 0;
 }
@@ -80,18 +80,23 @@ a{
       font-size: 16px;
       line-height: 24px;
       color: #FFFFFF;
-      background-color: transparent;
+      background: transparent;
       cursor: pointer;
+      outline: none;
+      border: none;
+      border-right: 1px solid #FFFFFF;
+      
       
 }
+
+
+      
+      
 
 .language__btn_activated{
       color: #0C4AEA;
 }
 
-.language__btn::after{
-      border-right: 1px solid #FFFFFF;;
-}
 
 .language__btn + .language__btn{
       margin-left: 7px;
@@ -181,7 +186,6 @@ a{
       line-height: 18px;
       color: #878D96;
 }
-
 
 .about{
       margin-bottom: 150px;
@@ -366,7 +370,6 @@ border-left: 8px solid #2D42FF;
       justify-content: center;
       margin-top: 60px;
       list-style: none;
-      
 }
 
 .team .slick-dots > li{
@@ -870,6 +873,10 @@ border-left: 8px solid #2D42FF;
 
 .footer__social-link{
       margin-left: 8px;
+}
+
+.menu__btn{
+      display: none;
 }
 
 

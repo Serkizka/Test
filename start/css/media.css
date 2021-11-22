@@ -1,0 +1,136 @@
+@media (max-width: 1250px){
+      
+      .header .menu{
+            order: 1;
+      }
+
+      .header .menu__item + .menu__item{
+            margin-left: auto;
+      }
+
+      .header .menu__list{
+            display: block;
+            position: absolute;
+            top: 100px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            transform: translateY(-500px);
+            transition: all .5s;
+      }
+      .header .menu__list.menu__list--active{
+            transform: translateY(0);
+      }
+
+      
+      .menu__list-link{
+            display: block;
+            padding: 15px 0;
+            
+      }
+      .menu__btn{
+            display: block;
+            width: 30px;
+            height: 24px;
+            border: none;
+            border-top: 2px solid #fefefe;
+            border-bottom: 2px solid #fefefe;
+            background-color: transparent;
+            position: relative;
+            cursor: pointer;
+            
+      }
+
+      .menu__btn::before{
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 1px;
+            background-color: #fefefe;
+            left: 0;
+            top: 10px;
+      }
+
+      .language__nav{
+            margin-left: auto;
+      } 
+
+      .language__btn{
+            border: none;
+      }
+
+      .top{
+            background-size: 60%;
+            background-position-y: 80px;
+      }
+}
+
+@media (max-width: 1090px){
+      .header .top{
+            background: none;     
+      }
+
+      .top__text{
+            margin-left: 140px;
+      }
+
+      .top__title{
+            text-align: center;
+            align-items: center;
+            max-width: 90%;
+      }
+
+      .top__content-about{
+            text-align: right;
+            margin-right: 250px;
+      }
+}
+
+@media (max-width: 990px){
+      .top__title{
+            text-align: left;
+            max-width: 70%;
+      }
+
+      .top__text{
+            margin-left: 0;
+      }
+
+      .top__content-about{
+            text-align: center;
+            margin-right: 83px;
+            
+      }
+}
+
+@media (max-width: 840px){
+
+      .top__title{
+            text-align: center;
+            max-width: 40%;
+            margin-left: 150px;
+            margin-bottom: 130px;
+      }
+
+      .top__text{
+            margin-left: 243px;
+      }
+
+      .top__content-about{
+            display: none;
+      }
+}
+
+@media (max-width: 620px){
+      .top__title{
+            text-align: left;
+            max-width: 20%;
+            margin-left: 0;
+            margin-bottom: 130px;
+      }
+
+      .top__text{
+            margin-left: 0px;
+      }
+}
+     

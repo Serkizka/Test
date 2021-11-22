@@ -15,7 +15,9 @@ $(function(){
         prevArrow: '<button type="button" class="slick-btn slick-prev">2</button>',
       });
 
-      
+      $('.menu__btn').on('click', function(){
+        $('.menu__list').toggleClass('menu__list--active')
+      });
 });
 
 
