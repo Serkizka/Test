@@ -17,7 +17,7 @@ a{
 }
 
 .container{
-      width: 1240px;
+      max-width: 1240px;
       margin: 0 auto;
       padding: 0 10px;
 }
@@ -46,7 +46,9 @@ a{
       
 }
 
-
+.header__wrapper{
+      width: 100%;
+}
 
 .menu{
       margin-left: auto;
@@ -103,15 +105,12 @@ a{
 }
 
 .top{
-      display: flex;
-      padding-top: 125px;
+      /* padding-top: 125px;
       padding-bottom: 62px;
       background-image: url('../images/top__content-img.png');
       background-repeat: no-repeat;
       background-position-x: 430px;
-      background-position-y: -11px;
-      
-      
+      background-position-y: -11px;  */
 }
 
 
@@ -140,10 +139,13 @@ a{
       font-size: 16px;
       line-height: 24px;
       color: #FFFFFF;
-      margin-left: 190px;
       margin-top: 8px;
       margin-bottom: 131px;
-      
+      text-align: right;
+}
+
+.top__content-left{
+      width: fit-content;
 }
 
 .order-btn{
@@ -185,6 +187,10 @@ a{
       font-size: 12px;
       line-height: 18px;
       color: #878D96;
+
+}
+.top__inline{
+      display: flex;
 }
 
 .about{
