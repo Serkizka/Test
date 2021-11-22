@@ -1,3 +1,35 @@
+@media (max-width: 1350px){
+      .about__inner{
+            display: block ;
+      }
+
+      .about__information{
+            text-align: center;
+            max-width: 80%;
+            margin: auto;
+      }
+      .about__item{
+            width: 100%;
+            text-align: center;
+            margin-left: 150px;
+      }
+
+      .about__information::after{
+            top: 0;
+      }
+
+      .about__content{
+            text-align: center;
+      }
+
+      .about__text{
+            width: 80%;
+            margin: auto;
+            padding-bottom: 20px;
+      }
+
+   
+
 @media (max-width: 1250px){
       
       .header .menu{
@@ -53,6 +85,7 @@
 
       .language__nav{
             margin-left: auto;
+            
       } 
 
       .language__btn{
@@ -63,6 +96,28 @@
             background-size: 60%;
             background-position-y: 80px;
       }
+}
+
+@media (max-width: 1170px){
+      
+      .about__information{
+            text-align: center;
+            max-width: 50%;
+            margin: auto;
+      }
+      .about__item{
+            width: 100%;
+            text-align: center;
+            margin-left: 150px;
+      }
+
+
+      .about__text{
+            width: 50%;
+            margin: auto;
+            padding-bottom: 20px;
+      }
+
 }
 
 @media (max-width: 1090px){
@@ -101,6 +156,18 @@
             margin-right: 83px;
             
       }
+
+      .about__information{
+            max-width: 60%;
+            margin-left: 20px;
+      }
+
+      .about__text,
+      .about__title{
+            width: 50%;
+            margin-left: 80px;
+            padding-bottom: 20px;
+      }
 }
 
 @media (max-width: 840px){
@@ -121,6 +188,46 @@
       }
 }
 
+@media (max-width: 790px){
+
+      .about__information{
+            max-width: 50%;
+            margin-left: 0;
+      }
+
+      .about__text,
+      .about__title{
+            width: 40%;
+            margin-left: 60px;
+            padding-bottom: 20px;
+      }
+}
+
+@media (max-width: 655px){
+      
+      .about__information{
+            max-width: 150px;
+
+      }
+
+      .about__information::after,
+      .about__information::before{
+            display: none;
+      }
+
+      .about__item{
+            margin-left: 0;  
+      }
+
+      .about__text,
+      .about__title{
+            text-align: left;
+            width: 40%;
+            margin-left: 0;
+            padding-bottom: 20px;
+      }
+}
+
 @media (max-width: 620px){
       .top__title{
             text-align: left;
@@ -131,6 +238,43 @@
 
       .top__text{
             margin-left: 0px;
+      }
+}
+
+@media (max-width: 480px){
+
+      .about__list{
+            background: none;
+            padding: auto;   
+      }
+
+      .about__item-num{
+            text-align: center;
+            padding-left: 15px;
+      }
+
+      .about__item-text{
+            color: #051a54;
+            text-align: center;
+            width: 150px;
+      }
+
+      .about__text{
+            display: none;
+      }
+      .about__inner{
+            text-align: center;
+            padding: auto;
+      }
+      .about__text-adaptive{
+            display: flex;
+            color: #2F3542;
+            width: 200px;
+            
+      }
+      .about__text-adaptive,
+      .about__title{
+            margin-left: 60px;
       }
 }
      
