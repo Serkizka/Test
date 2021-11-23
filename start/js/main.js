@@ -1,10 +1,10 @@
 $(function(){
-      $('.team__inner').slick({
+      $('.slider__inner').slick({
           dots: true,
           slidesToShow: 3,
           slidesToScroll: 3,
-          nextArrow: '<button type="button" class="slick-btn slick-next"><img type="button" src=\'images/arrow.png\'></button>',
-          prevArrow: '<button type="button" class="slick-btn slick-prev"><img src=\'images/arrow.png\' class=\'rotateimg180\'></button>',
+          nextArrow: '<button type="button" class="slick-btn slick-next"><img type="button" ></button>',
+          prevArrow: '<button type="button" class="slick-btn slick-prev"><img type="button" ></button>',
           
       });
 
