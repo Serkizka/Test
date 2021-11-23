@@ -82,6 +82,13 @@
             background-size: 60%;
             background-position-y: 80px;
       }
+
+      .slick-slide img{
+            display: flex;
+            width: 100%;
+      }
+
+      
 }
 
 @media (max-width: 1170px){

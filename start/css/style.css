@@ -298,18 +298,25 @@ border-left: 8px solid #2D42FF;
 }
 
 
-
+.slider__inner{
+      position: relative;
+      margin: 0 -15px;
+     
+}
 
 .slider__item-box{
       border: 1px solid #CBCCCF;
-      margin-right: 20px;
-      
+      margin: 0px 15px;
+      text-align: center;
 }
+
+
 
 .slider__img-more,
 .slider__item-img{
       max-width: 100%;
-      padding-bottom: 40px;
+      margin-bottom: 40px;
+      
 }   
 
 
@@ -318,7 +325,8 @@ border-left: 8px solid #2D42FF;
       font-size: 24px;
       line-height: 24px;
       color: #000000;
-      margin: 40px 131px 16px 24px;
+      margin: 40px 40px 16px 24px;
+      text-align: left;
 }
 
 .slider__item-title3{
@@ -335,6 +343,7 @@ border-left: 8px solid #2D42FF;
       line-height: 30px;
       color: #979797;
       margin: 16px 24px 40px 24px;
+      text-align: left;
 }
 
 .slider__item-text3{
@@ -346,14 +355,15 @@ border-left: 8px solid #2D42FF;
 }
 
 .slider__more-btn{
-      display: inline-block;
+      display: block;
       font-weight: 400;
       font-size: 18px;
       line-height: 22px;
       color: #FFFFFF;
       background-color: #0C4AEA;
       padding: 14px 55px 13px 55px;
-      margin: 65px 91px 65px 91px;
+      margin: 65px 91px;
+      
 }
 
 
@@ -397,10 +407,7 @@ border-left: 8px solid #2D42FF;
 }
 
 
-.slider__inner{
-      position: relative;
-     
-}
+
 
 
 .slick-btn{
@@ -408,29 +415,42 @@ border-left: 8px solid #2D42FF;
       border: none;
       cursor: pointer;
       outline: none;
+      bottom: 60px;
 }
 
 .team .slick-arrow{
       position: absolute;
-      
-      margin: -15px 0 0 0; 
       z-index: 2;
-      width: 30px; 
-      height: 30px; 
-      display: flex;
+      bottom: -4px;
+      
+}
+
+.slick-btn::after{
+      z-index: 3;
+      
+      
+      transform: translate(-70%, 20%);
+      color: #222222;
+      font-size: medium;
 }
 
 .slick-next::after{
-      z-index: 3;
-      position: absolute;
-      bottom: -60px;
-      transform: translate(-50%, -50%);
+      font-family: 'icomoon';
+      content: "\ea3c";
+}
+
+.slick-prev::after{
       font-family: 'icomoon';
       content: "\ea3c";
 }
 
 .slick-next{
       right: 42%;
+}
+
+.slick-prev{
+      left: 42%;
+      transform: rotate(180deg);
 }
 
 .slick-list {
