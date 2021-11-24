@@ -4,6 +4,7 @@ $(function(){
           slidesToShow: 3,
           slidesToScroll: 3,
           
+          
           nextArrow: '<button type="button" class="slick-btn slick-next"><img type="button" ></button>',
           prevArrow: '<button type="button" class="slick-btn slick-prev"><img type="button" ></button>',
 
@@ -30,17 +31,31 @@ $(function(){
           
       });
 
-      $('.projects__inner').slick({
-        dots:true,
-        slidesToShow:3,
-        nextArrow: '<button type="button" class="slick-btn slick-next">1</button>',
-        prevArrow: '<button type="button" class="slick-btn slick-prev">2</button>',
-      });
+      $(document).ready(function(){
+        $('.slider-for').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          fade: true,
+          asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          asNavFor: '.slider-for',
+          dots: true,
+          centerMode: true,
+          focusOnSelect: true,
+          
 
-      $('.menu__btn').on('click', function(){
-        $('.menu__list').toggleClass('menu__list--active')
+          nextArrow: '<button type="button" class="slick-btn slick-next"><img type="button" ></button>',
+          prevArrow: '<button type="button" class="slick-btn slick-prev"><img type="button" ></button>',
+        });
       });
 });
+
+
+
 
 
 
