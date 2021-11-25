@@ -1,3 +1,4 @@
+
 @media (max-width: 1350px){
       .about__inner{
             display: block ;
@@ -19,6 +20,8 @@
             margin: auto;
             padding-bottom: 20px;
       }
+
+      
 
    
 
@@ -86,6 +89,56 @@
       .slick-slide img{
             display: flex;
             width: 100%;
+      }
+
+      .for__img-text{
+            right: 10%;
+      }
+
+      .news__items{
+            display: block;
+            width: 50%;
+            align-items: center;
+            margin: auto;
+            
+      }
+
+      .news__item{
+            margin-bottom: 50px;
+            margin-right: 0;
+      }
+
+      .form__box-inner{
+            display: block;
+      }
+
+      .form__box-left{
+            max-width: 100%;
+            text-align: center;
+      }
+
+      .form__left-top{
+            display: block;
+            align-items: center;
+      }
+
+      .left__address-name::before,
+      .left__mail-name::before,
+      .left__phone-name::before{
+            display: none;
+      }
+
+      .left__address-mail,
+      .left__address-text{
+            margin-right: 0;
+      }
+      .form__left-bottom iframe{
+            width: 100%;
+      }
+
+      .form__box-right{
+            max-width: 100%;
+            margin-top: 100px;
       }
 
       
@@ -163,7 +216,30 @@
       .about__information::after{
             display: none;
       }
+
+      .footer .menu{
+            display: none;
+      }
+
+      .footer__inner{
+            justify-content: center;
+            margin: auto;
+            
+      }
+
+      .footer__social-link{
+            margin: 0 15px;
+      }
 }
+
+
+@media (max-width: 990px){
+      .for__img-text{
+            display: none;
+      }
+}
+
+
 
 @media (max-width: 840px){
 
@@ -219,6 +295,12 @@
             text-align: left;
 }
 
+.news__items{
+      width: 100%;
+      margin: auto;
+      align-items: center;
+}
+
 @media (max-width: 620px){
       .top__title{
             text-align: left;
@@ -255,6 +337,17 @@
             margin-bottom: 40px;
             color: #2F3542;
             position: relative;
+      }
+
+      .projects__item-box{
+            padding: 0px;
+      }
+
+      .slider__more-btn{
+            margin-top: 65px;
+            margin-bottom: 65px;
+            margin-right: 5px;
+            margin-left: 5px;
       }
 }
      

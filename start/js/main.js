@@ -38,6 +38,7 @@ $(function(){
           arrows: false,
           fade: true,
           asNavFor: '.slider-nav'
+
         });
         $('.slider-nav').slick({
           slidesToShow: 3,
@@ -50,6 +51,27 @@ $(function(){
 
           nextArrow: '<button type="button" class="slick-btn slick-next"><img type="button" ></button>',
           prevArrow: '<button type="button" class="slick-btn slick-prev"><img type="button" ></button>',
+
+          responsive: [
+            {
+              breakpoint: 1350,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                arrows: NamedNodeMap,
+              }
+            },
+
+            {
+              breakpoint: 1000,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll:1,
+                arrows: NamedNodeMap,
+              }
+            }
+          ]
+            
         });
       });
 });
