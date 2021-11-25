@@ -4,9 +4,7 @@
             display: block ;
       }
 
-      .about__information{
-            margin: auto;
-      }
+      
       
 
       
@@ -22,7 +20,13 @@
       }
 
       
-
+@media (max-width: 12650px){
+      .slider-for .slider__item::after{
+            padding: auto;
+            width: 100%;
+            height: 100%;
+      }
+}
    
 
 @media (max-width: 1250px){
@@ -146,10 +150,17 @@
 
 @media (max-width: 1170px){
 
-
+      .about__list{
+            text-align: center;
+            align-items: center;
+            padding-top: 68px;
+            padding-bottom: 48px;
+            padding-left: 0px;
+            padding-right: 0px;
+           }
 
       .about__text{
-            width: 50%;
+            
             margin: auto;
             padding-bottom: 20px;
       }
@@ -198,10 +209,7 @@
             
       }
 
-      .about__information{
-            max-width: 60%;
-            
-      }
+     
       .about__content{
             max-width: 100%;
             margin-left: 0;
@@ -261,27 +269,33 @@
 @media (max-width: 790px){
 
       .about__information{
-            max-width: 50%;
+            max-width: 100%;
             margin-left: 0;
       }
 
+      .about__list{
+            text-align: center;
+            align-items: center;
+            padding-top: 68px;
+            padding-bottom: 48px;
+            padding-left: 0px;
+            padding-right: 0px;
+      }
+
       .about__content{
-            text-align: left;
+            text-align: center;
       }
 
       .about__text,
       .about__title{
             padding-bottom: 20px;
-            margin-left: 0;
+
       }
 }
 
 @media (max-width: 655px){
       
-      .about__information{
-            max-width: 150px;
-
-      }
+      
 
       .about__information::after,
       .about__information::before{
@@ -290,10 +304,7 @@
 
       
 
-      .about__text,
-      .about__title{
-            text-align: left;
-}
+     
 
 .news__items{
       width: 100%;
@@ -311,6 +322,11 @@
 
       .top__text{
             margin-left: 0px;
+      }
+
+      .about__list{
+            
+            background-size: 100%;
       }
 }
 
