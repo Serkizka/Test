@@ -5,6 +5,7 @@ $(function(){
           slidesToScroll: 3,
           
           
+          
           nextArrow: '<button type="button" class="slick-btn slick-next"><img type="button" ></button>',
           prevArrow: '<button type="button" class="slick-btn slick-prev"><img type="button" ></button>',
 
@@ -40,6 +41,9 @@ $(function(){
           asNavFor: '.slider-nav'
 
         });
+
+        
+
         $('.slider-nav').slick({
           slidesToShow: 3,
           slidesToScroll: 3,
@@ -74,7 +78,13 @@ $(function(){
             
         });
       });
+
+      
+      $('.menu__btn').on('click', function(){
+        $('.menu ul').toggleClass('menu__list--active')
+      });
 });
+
 
 
 
